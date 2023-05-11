@@ -1,1 +1,14 @@
-# test
+# README #
+Este es un repocitorio de...
+
+### NOMBRE Y APELLDO: ###
+SALGUERO NICOLAS
+
+### MATERIA: ###
+TALLER DE INGENIERRIA DE SOFTWARE
+
+### CURSO: ###
+7º2º
+
+### COLEGIO: ###
+COLEGIO TECNICO PROVICIAL "OLGA B. DE ARKO"
