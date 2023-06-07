@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./main.css">
+		<title>Formulario</title>
+		<script src="./main.js"> 
+		</script>
+	</head>
+	<body>
+		<div class="Contenedor">
+			<div class="Formulario">
+				<!-- nombre, codigo, docente, hssemanales, nota1, nota2, nota3 -->
+				<label> nombre:
+				 <input id="nombre" type="text" placeholder="nombre"></label>
+				<label> codigo:
+				 <input id="codigo" type="text" placeholder="codigo"></label>
+				<label> docente:
+				 <input id="docente" type="text" placeholder="docente"></label>
+				<label> hssemanales:
+				 <input id="hssemanales" type="text" placeholder="hssemanales"></label>
+				 <div id="divNotas">
+					 <label> notas: <input name="nota" type="number" placeholder="notas"></label>
+				</div>
+				 
+				<div class="botones">
+						<span onclick="eliminarTodos()" class="Boton Eliminar">Eliminar</span>
+						<span onclick="alerta()" class="Boton Guardar">Guardar</span>
+						<span onclick="agregarNotas()" class="Boton agregar">agregar</span>
+				</div>
+
+					
+			</div>
+			<div id="divMaterias">
+			</div>
+		</div>	
+		</div>
+	</body>

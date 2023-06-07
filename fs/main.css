@@ -1,0 +1,85 @@
+}
+.Header{
+    background-color: pink;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.Contenedor{
+    background-color: hotpink;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:pink;
+    padding: 100px;
+    border-radius: 50px;
+    align-items: center;
+}
+.Formulario label{
+    margin: 15px;
+    width: 90%;
+
+}
+#divNotas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Formulario label input, select{
+    width: 100%;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+.Boton1{
+    padding: 15px 15px;
+    margin:5px;
+    background-color: hotpink;
+    border-radius: 15px;
+
+}
+.Boton{
+    padding: 15px 15px;
+    margin:5px;
+    background-color: hotpink;
+    border-radius: 15px;
+
+}
+
+.carta{
+    width: 60%;
+    padding: 20px 35px;
+    margin:30px;
+    background-color: pink;
+    border-radius: 30px;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+}
+
+.eliminarx{
+     justify-content: center;
+     background-color: hotpink;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     padding: 5px 10px;
+
+}
+ #divNotas input{
+    width: 150px;
+ }
+ #divNotas{
+    display: flex;
+    flex-wrap: wrap;
+ }
