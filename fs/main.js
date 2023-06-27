@@ -38,20 +38,14 @@ let materias = [];
 			materias = [];
 			limpiar();
 		}
-		 function agregarNotas(){
-		 	const divNotas = document.getElementById('divNotas');
-		 	const NotasHTML = `<label> notas: <input name="nota" type="number" placeholder="notas"></label>`
-
-		 	divNotas.innerHTML += NotasHTML;
-		 }
-
+		
 
 
 	function alerta() {
-  				const nombre = document.getElementById('nombre').value;
   				const codigo = document.getElementById('codigo').value;
+  				const nombre = document.getElementById('nombre').value;
   				const docente= document.getElementById('docente').value;
-  				const hssemanales = document.getElementById('hssemanales').value;
+  				const hsCatedras = document.getElementById('hsCatedras').value;
   				let notas= [...document.getElementsByName('nota')];
   				console.log(notas)
 
@@ -60,14 +54,48 @@ let materias = [];
   				console.log(notas)
 
 				const materia = {
-					nombre,
 					codigo,
+					nombre,
 					docente,
-					hssemanales,
-					notas,
+					hsCatedras,
 				}
 
 				materias.push(materia);
 
-				escribir(materias);
+				//escribir(materias);
 			}
+
+	 function agregarNotas(){
+		 	const divNotas = document.getElementById('divNotas');
+		 	const NotasHTML = `<label> notas: <input name="nota" type="number" placeholder="notas"></label>`
+
+		 	divNotas.innerHTML += NotasHTML;
+}
+
+	function obtenerMateria(){
+		const url="http://192.168.0.178:3010/api/materias/"
+
+		axios.post(url)
+		.then((resp)=>{
+		//escribir(//resp.data.materia);
+			//resp.data.materias
+		})
+		.catch((error)=>{
+
+		})
+}
+
+	function guardar(datos){
+		const url="http://192.168.0.178:3010/api/materias/"
+
+		axios.post(url)
+		.then((resp)=>{
+				obtenerMateria()
+	})
+	.catch((error)=>{
+		alerta("ocurrio un error")
+		console.log(error)
+	})
+}
+
+
