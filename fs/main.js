@@ -41,7 +41,7 @@ let materias = [];
 		
 
 
-	function alerta() {
+	function guardar() {
   				const codigo = document.getElementById('codigo').value;
   				const nombre = document.getElementById('nombre').value;
   				const docente= document.getElementById('docente').value;
@@ -87,15 +87,20 @@ let materias = [];
 
 	function guardar(datos){
 		const url="http://192.168.0.178:3010/api/materias/"
-
+		
 		axios.post(url)
 		.then((resp)=>{
-				obtenerMateria()
-	})
-	.catch((error)=>{
-		alerta("ocurrio un error")
-		console.log(error)
-	})
+				console.log("hola")
+				obtenerMateria();
+		})
+		.catch((error)=>{
+			alerta("ocurrio un error");
+			console.log(error);
+		})
 }
+
+	
+
+
 
 
