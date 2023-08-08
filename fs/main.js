@@ -75,8 +75,9 @@ let materias = [];
 	function obtenerMateria(){
 		const url="http://192.168.0.178:3010/api/materias/"
 
-		axios.post(url)
+		axios.get(url)
 		.then((resp)=>{
+			console.log(url)
 		//escribir(//resp.data.materia);
 			//resp.data.materias
 		})
@@ -88,8 +89,9 @@ let materias = [];
 	function guardar(datos){
 		const url="http://192.168.0.178:3010/api/materias/"
 
-		axios.post(url)
+		axios.post(url, datos)
 		.then((resp)=>{
+				console.lop(resp.data)
 				obtenerMateria()
 	})
 	.catch((error)=>{
